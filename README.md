@@ -18,7 +18,8 @@ git clone https://github.com/The-Debarghya/goftpd
 ```
 - Move to the `server` directory and compile with:
 `go build .`
-- Add username and encrypted-password hashes(AES-256) along with the key in `creds.json` file
+- Add username and encrypted-password hashes(AES-256) along with the key in `creds.json` file.
+- Make two directories named `ftp` and `ftpfiles` in the directory above `server` or `client`.(These 2 directories actually work as work directories for server and client respectively.)
 - Start the server first.
 - Next switch to another console tab and move to `client` directory and compile with:
 `go build .`
