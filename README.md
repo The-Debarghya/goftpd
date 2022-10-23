@@ -14,7 +14,7 @@
 
 - Clone the repository with:
 ```bash
-git clone https://github.com/The-Debarghya/go_ftpd
+git clone https://github.com/The-Debarghya/goftpd
 ```
 - Move to the `server` directory and compile with:
 `go build .`
