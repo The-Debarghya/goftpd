@@ -23,7 +23,7 @@ func readDir(conn net.Conn)  {
 	fileInfo := ""
 	for _, file := range files{
 		fi, _ := file.Info()
-		fileInfo += fi.Mode().String() + " " + fmt.Sprintf("%x", fi.Size()) + " " + file.Name() + "\n"
+		fileInfo += fi.Mode().String() + " " + fmt.Sprintf("%d", fi.Size()) + " " + file.Name() + "\n"
 	}
 	conn.Write([]byte(fileInfo))
 }
